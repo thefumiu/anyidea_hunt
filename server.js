@@ -1,12 +1,12 @@
 const express = require("express");
 
-// SETUP - global variables
+// GLOBAL
 const PORT = 8083;
 
 // SETUP - express
 const app = express();
 app.use(express.json());
-app.use(express.static("files"));
+app.use(express.static("css"));
 app.set('view engine', 'ejs');
 
 // METHODS
